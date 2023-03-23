@@ -26,7 +26,6 @@ console.log(userMail);
 send.addEventListener( 'click', function(){
   
   
-  for (let i = 0; i < mailList.length; i++) {
     const userMail = document.getElementById('input').value; 
 
     if (mailList.includes(userMail)) {
@@ -37,16 +36,15 @@ send.addEventListener( 'click', function(){
     }
   
   }
-})
-
+)
 
   document.addEventListener( 'keydown', function(){
   if (event.key === 'Enter') {
-  for (let i = 0; i < mailList.length; i++) {
     const userMail = document.getElementById('input').value; 
 
     if (mailList.includes(userMail)) {
-      signIn.innerHTML = 'Ora possiamo giocare';  
+      signIn.innerHTML = 'Ora possiamo giocare'; 
+      
     }else {
       signIn.innerHTML = 'Registrati per giocare';  
   
@@ -55,7 +53,9 @@ send.addEventListener( 'click', function(){
   }
   }
 
-  })
+  )
+
+
   
 
 

@@ -31,12 +31,13 @@ send.addEventListener( 'click', function(){
     const userMail = document.getElementById('input').value; 
 
     if (mailList.includes(userMail)) {
-      signIn.innerHTML = 'Ora possiamo giocare';  
+  
       start.classList.add('d-none')
       play.classList.remove('d-none')
 
     }else {
-      signIn.innerHTML = 'Registrati per giocare';  
+      signIn.innerHTML = 'Registrati per giocare'; 
+
   
     }
   
@@ -87,7 +88,7 @@ gioca.addEventListener('click', function(){
 
 
   }else {
-   winnerIs.innerHTML = 'Complimenti!  E patta!'
+   winnerIs.innerHTML = "Complimenti!  E' patta!"
    winnerIs.classList.remove('winner');
    winnerIs.classList.remove('looser');
 
@@ -100,7 +101,6 @@ gioca.addEventListener('click', function(){
   userPart.innerHTML =` 
   Tu: <br>
   ${userNumber}
-  
   `; 
   computerPart.innerHTML = ` 
   Computer: <br>

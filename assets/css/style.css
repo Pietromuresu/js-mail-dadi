@@ -4,6 +4,14 @@
  border: 1px solid black;
 }
 
+body {
+  background-color: #EFE9E9;
+  color: #243232;
+  overflow-y: hidden;
+  font-family: 'Hanken Grotesk', sans-serif;
+font-family: 'Merriweather', serif;
+}
+
 .container{
   display: flex;
   justify-content: center;
@@ -17,6 +25,19 @@
   text-align: center;
 }
 
+.container-input input, 
+.container-input button
+{
+  font-size: small;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.container-input input {
+  width: 30%;
+}
+
 .container-play {
   height: 100vh;
   width: 100vh;
@@ -28,6 +49,7 @@
   justify-content: center;
 }
 
+
 .looser {
   color: red;
 }
@@ -35,3 +57,21 @@
 .winner {
   color: green;
 }
+
+#welcome, #goodLuck{
+  font-family: 'Libre Baskerville', serif;
+  font-size: 40px;
+  font-style: italic;
+}
+#gioca button {
+  background-color: #EFE9E9;
+
+}
+#gioca button i {
+  font-size: 40px;
+  
+}
+
+
+
+

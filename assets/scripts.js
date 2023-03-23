@@ -21,4 +21,12 @@ const mailList = [
 const userMail = prompt ('Inserisci la tua mail');
 console.log(userMail);
 
+for (let i = 0; i < mailList.length; i++) {
 
+  if (mailList.includes(userMail)) {
+    console.log('Ora possiamo giocare');  
+  }else {
+    console.log('Registrati per giocare');
+  }
+
+}

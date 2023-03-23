@@ -1,4 +1,4 @@
-
+// Controllo mail per il Login
 
 const mailList = [
   'ginopaoli@gmail.com', 
@@ -21,6 +21,8 @@ const mailList = [
 const signIn = document.getElementById('welcome');
 const userMail = document.getElementById('input').value; 
 const send = document.getElementById('send');
+const start = document.getElementById('container-start');
+const play = document.getElementById('container-play');
 console.log(userMail);
 
 send.addEventListener( 'click', function(){
@@ -30,6 +32,9 @@ send.addEventListener( 'click', function(){
 
     if (mailList.includes(userMail)) {
       signIn.innerHTML = 'Ora possiamo giocare';  
+      start.classList.add('d-none')
+      play.classList.remove('d-none')
+
     }else {
       signIn.innerHTML = 'Registrati per giocare';  
   
@@ -44,6 +49,9 @@ send.addEventListener( 'click', function(){
 
     if (mailList.includes(userMail)) {
       signIn.innerHTML = 'Ora possiamo giocare'; 
+      start.classList.add('d-none')
+      play.classList.remove('d-none')
+
       
     }else {
       signIn.innerHTML = 'Registrati per giocare';  
@@ -56,8 +64,49 @@ send.addEventListener( 'click', function(){
   )
 
 
-  
+  // Dadi 
 
+const gioca = document.getElementById('gioca');
+const winnerIs = document.getElementById('winnerIs');
+
+gioca.addEventListener('click', function(){
+
+  const userNumber = Math.floor(Math.random() *  7);
+  console.log(userNumber);
+  const computerNumber = Math.floor(Math.random() *  7);
+  console.log(computerNumber);
+
+  if (userNumber > computerNumber ) {
+   winnerIs.innerHTML = 'Complimenti!  Hai vinto tu!'; 
+   winnerIs.classList.remove('looser');
+   winnerIs.classList.add('winner');
+  }else if (userNumber < computerNumber ){
+   winnerIs.innerHTML = 'Oh mi spiace!  Ho vinto io!';
+    winnerIs.classList.remove('winner');
+    winnerIs.classList.add('looser');
+
+
+  }else {
+   winnerIs.innerHTML = 'Complimenti!  E patta!'
+   winnerIs.classList.remove('winner');
+   winnerIs.classList.remove('looser');
+
+  }
+
+  const userPart = document.getElementById('userPart');
+  const computerPart = document.getElementById('computerPart');
+
+
+  userPart.innerHTML =` 
+  Tu: <br>
+  ${userNumber}
+  
+  `; 
+  computerPart.innerHTML = ` 
+  Computer: <br>
+  ${computerNumber}
+`;
+})
 
 
 

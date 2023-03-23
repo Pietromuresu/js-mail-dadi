@@ -1,15 +1,37 @@
-
+.debug {
+ background-color: aqua;
+ height: 500px;
+ border: 1px solid black;
+}
 
 .container{
   display: flex;
   justify-content: center;
   align-items: end;
   height: 50vh;
-  width: 100%;
+  
+
 }
 
 .container-input {
   text-align: center;
 }
 
+.container-play {
+  height: 100vh;
+  width: 100vh;
 
+}
+.row .col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.looser {
+  color: red;
+}
+
+.winner {
+  color: green;
+}

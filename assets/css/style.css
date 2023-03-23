@@ -29,7 +29,7 @@ font-family: 'Merriweather', serif;
 .container-input button
 {
   font-size: small;
-  height: 35px;
+  height: 50px;
   border-radius: 10px;
   border: 1px solid black;
 }
@@ -39,6 +39,7 @@ font-family: 'Merriweather', serif;
 }
 
 .container-play {
+  
   height: 100vh;
   width: 100vh;
 
@@ -60,7 +61,7 @@ font-family: 'Merriweather', serif;
 
 #welcome, #goodLuck{
   font-family: 'Libre Baskerville', serif;
-  font-size: 40px;
+  font-size: 70px;
   font-style: italic;
 }
 #gioca button {
@@ -68,7 +69,7 @@ font-family: 'Merriweather', serif;
 
 }
 #gioca button i {
-  font-size: 40px;
+  font-size: 70px;
   
 }
 

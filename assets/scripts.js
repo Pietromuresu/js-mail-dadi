@@ -18,15 +18,48 @@ const mailList = [
   'mariadefilippi@gmail.com'
 ]
 
-const userMail = prompt ('Inserisci la tua mail');
+const signIn = document.getElementById('welcome');
+const userMail = document.getElementById('input').value; 
+const send = document.getElementById('send');
 console.log(userMail);
 
-for (let i = 0; i < mailList.length; i++) {
+send.addEventListener( 'click', function(){
+  
+  
+  for (let i = 0; i < mailList.length; i++) {
+    const userMail = document.getElementById('input').value; 
 
-  if (mailList.includes(userMail)) {
-    console.log('Ora possiamo giocare');  
-  }else {
-    console.log('Registrati per giocare');
+    if (mailList.includes(userMail)) {
+      signIn.innerHTML = 'Ora possiamo giocare';  
+    }else {
+      signIn.innerHTML = 'Registrati per giocare';  
+  
+    }
+  
+  }
+})
+
+
+  document.addEventListener( 'keydown', function(){
+  if (event.key === 'Enter') {
+  for (let i = 0; i < mailList.length; i++) {
+    const userMail = document.getElementById('input').value; 
+
+    if (mailList.includes(userMail)) {
+      signIn.innerHTML = 'Ora possiamo giocare';  
+    }else {
+      signIn.innerHTML = 'Registrati per giocare';  
+  
+    }
+
+  }
   }
 
-}
+  })
+  
+
+
+
+
+
+

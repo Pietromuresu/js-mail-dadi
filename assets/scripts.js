@@ -25,9 +25,8 @@ const start = document.getElementById('container-start');
 const play = document.getElementById('container-play');
 console.log(userMail);
 
-send.addEventListener( 'click', function(){
-  
-  
+
+    send.addEventListener( 'click', function (){
     const userMail = document.getElementById('input').value; 
 
     if (mailList.includes(userMail)) {
@@ -40,6 +39,7 @@ send.addEventListener( 'click', function(){
 
   
     }
+    
   
   }
 )
@@ -71,6 +71,10 @@ const gioca = document.getElementById('gioca');
 const winnerIs = document.getElementById('winnerIs');
 
 gioca.addEventListener('click', function(){
+
+  const btnGioca = document.getElementById('btnGioca');
+    
+  btnGioca.classList.remove('fa-shake')
 
   const userNumber = Math.floor(Math.random() *  7);
   console.log(userNumber);
@@ -104,8 +108,7 @@ gioca.addEventListener('click', function(){
   `; 
   computerPart.innerHTML = ` 
   Computer: <br>
-  ${computerNumber}
-`;
+  ${computerNumber}`;
 })
 
 

@@ -65,7 +65,8 @@ font-family: 'Merriweather', serif;
   font-style: italic;
 }
 #gioca button {
-  background-color: #EFE9E9;
+  background-color: #243232;
+  color: aliceblue;
 
 }
 #gioca button i {

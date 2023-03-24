@@ -76,9 +76,9 @@ gioca.addEventListener('click', function(){
     
   btnGioca.classList.remove('fa-shake')
 
-  const userNumber = Math.floor(Math.random() *  7);
+  const userNumber = Math.ceil(Math.random() *  6);
   console.log(userNumber);
-  const computerNumber = Math.floor(Math.random() *  7);
+  const computerNumber = Math.ceil(Math.random() *  6);
   console.log(computerNumber);
 
   if (userNumber > computerNumber ) {

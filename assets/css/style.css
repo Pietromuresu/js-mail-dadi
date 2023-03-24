@@ -67,12 +67,16 @@ font-family: 'Merriweather', serif;
 #gioca button {
   background-color: #243232;
   color: aliceblue;
+  border-radius: 20px;
+  height: 50px;
+  padding: 5px;
+}
 
+#gioca button h1 {
+  font-size: 35px;
+  line-height: 40px;
 }
-#gioca button i {
-  font-size: 70px;
-  
-}
+
 
 
 
